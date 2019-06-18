@@ -5,7 +5,8 @@
     <title>Lord of the Rings</title>
     <meta name="author" content="Theo den Blanken">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/styleLOTR.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
   </head>
 
   <body lang="nl">
@@ -44,7 +45,7 @@
 
 
     <!-- jumbotron -->
-<header class="jumbotron">
+<header class="jumbotron text-warning">
     <div class="container-fluid">
       <h1 class="display-4">Lord of the Rings</h1>
       <p class="lead">The Fellowship of the Ring, The Two Towers, The Return of the King
@@ -119,23 +120,29 @@
     <!-- de verhalen -->
     <div id="verhaal" class="container-fluid">
       <div class="row p-4">
+        <div id="fellow" class="col-md-6 col-lg-4 p-4">
+<section class="card">
 
 
-      <section id="fellow" class="col-md-6 col-lg-4 p-4">
-        <h3>The Fellowship of the Ring</h3>
-        <img src="img/fellowshipOfTheRings.jpg" alt="The Fellowship of the Ring" class="img-fluid">
-        <h4>2001</h4>
-<article >
+
+        <h3 class="card-header">The Fellowship of the Ring</h3>
+        <img src="img/fellowshipOfTheRings.jpg" alt="The Fellowship of the Ring" class="img-fluid card-img-top">
+        <div class="card-body">
+          <h4>2001</h4>
+<article>
       <p>Sauron, de machtige heerser van het kwaad heeft zijn ring verloren. Maar de ring, die de macht van het kwaad is, moet worden vernietigd. Via Gollem, komt deze in het bezit van Bilbo, een Hobbit.
           <br>
           De tovenaar Gandalf ontdekt dat de Ring er nog is een gaat het hoofd van de tovenaarsorde raadplegen. Die blijkt de kant van Sauron gekozen te hebben. Sauron gaat op jacht naar de ring. De Nazgûl trekken op naar de Gouw....
         </p>
         </article>
+      </div>
         <!-- Button trigger modal -->
+        <div class="card-footer text-center">
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fellowShip">
   Lees meer...
 </button>
-
+</div>
+</section>
 <!-- inhoud modaal -->
 <div class="modal fade" id="fellowShip" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -200,7 +207,8 @@
     </div>
   </div>
 </div>
-      </section>
+</div>
+<!-- einde kolom -->
 
       <section id="twoTowers" class="col-md-6 col-lg-4 p-4">
         <h3>The Two Towers</h3>
